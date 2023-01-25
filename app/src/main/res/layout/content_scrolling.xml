@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TrustlineActivity"
+    tools:showIn="@layout/activity_trustline">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:paddingTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/obj_tkn_blank_div4"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/txt_tkn"
+            android:layout_width="210dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:text="Token name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_tkn_mine"
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/obj_tkn_mine_div"
+            app:layout_constraintEnd_toStartOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/img_tkn_mine" />
+
+        <Button
+            android:id="@+id/btn_tkn_mine_wp"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="Whitepaper"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_tkn_mine"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn" />
+
+        <Button
+            android:id="@+id/btn_tkn_mine_tl"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Set Trustline"
+            app:layout_constraintBottom_toTopOf="@+id/obj_tkn_mine_div"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_tkn_mine_mine"
+            android:layout_width="149dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Mine Node"
+            app:layout_constraintBottom_toTopOf="@+id/obj_tkn_mine_div"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tkn_mine_wp"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/obj_tkn_mine_div"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="169dp"
+            android:background="@color/black"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_tkn_blank"
+            android:layout_width="210dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:text="Token name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_tkn"
+            app:layout_constraintStart_toStartOf="@+id/txt_tkn"
+            app:layout_constraintTop_toBottomOf="@+id/obj_tkn_mine_div" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_tl"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Set Trustline"
+            app:layout_constraintBottom_toTopOf="@+id/obj_tkn_blank_div"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_wp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_mine_tl"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tkn_blank_wp"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_wp"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Whitepaper"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_mine_tl"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_mine_tl"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank" />
+
+        <ImageView
+            android:id="@+id/img_tkn_blank"
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/obj_tkn_blank_div"
+            app:layout_constraintEnd_toStartOf="@+id/btn_tkn_blank_wp"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/img_tkn_mine"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/img_tkn_mine" />
+
+        <View
+            android:id="@+id/obj_tkn_blank_div"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="169dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_tkn_blank" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_wp2"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Whitepaper"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_tl"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank2" />
+
+        <View
+            android:id="@+id/obj_tkn_blank_div2"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="169dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_tkn_blank2" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_tl2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Set Trustline"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_wp2"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_blank_wp2"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tkn_blank_wp2" />
+
+        <TextView
+            android:id="@+id/txt_tkn_blank2"
+            android:layout_width="210dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="12dp"
+            android:text="Token name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_tkn_blank"
+            app:layout_constraintStart_toStartOf="@+id/txt_tkn_blank"
+            app:layout_constraintTop_toBottomOf="@+id/obj_tkn_blank_div" />
+
+        <ImageView
+            android:id="@+id/img_tkn_blank2"
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/obj_tkn_blank_div2"
+            app:layout_constraintEnd_toStartOf="@+id/btn_tkn_blank_wp2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/img_tkn_blank"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/img_tkn_mine" />
+
+        <ImageView
+            android:id="@+id/img_tkn_blank3"
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_tkn_blank_tl3"
+            app:layout_constraintEnd_toEndOf="@+id/img_tkn_blank2"
+            app:layout_constraintHorizontal_bias="0.983"
+            app:layout_constraintStart_toStartOf="@+id/img_tkn_blank2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank3"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@mipmap/img_tkn_mine" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_tl3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Set Trustline"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_wp3"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_blank_wp3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tkn_blank_wp3" />
+
+        <TextView
+            android:id="@+id/txt_tkn_blank3"
+            android:layout_width="210dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:text="Token name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_tkn_blank2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_tkn_blank2"
+            app:layout_constraintTop_toBottomOf="@+id/obj_tkn_blank_div2" />
+
+        <View
+            android:id="@+id/obj_tkn_blank_div3"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="169dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/obj_tkn_blank_div2" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_wp3"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Whitepaper"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_tl2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/img_tkn_blank3"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank3" />
+
+        <ImageView
+            android:id="@+id/img_tkn_blank4"
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/img_tkn_blank2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/img_tkn_blank2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank4"
+            app:srcCompat="@mipmap/img_tkn_mine" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_tl4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Set Trustline"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_wp4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_tkn_blank_wp4"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tkn_blank_wp4" />
+
+        <TextView
+            android:id="@+id/txt_tkn_blank4"
+            android:layout_width="210dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:text="Token name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_tkn_blank3"
+            app:layout_constraintStart_toStartOf="@+id/txt_tkn_blank3"
+            app:layout_constraintTop_toBottomOf="@+id/obj_tkn_blank_div3" />
+
+        <Button
+            android:id="@+id/btn_tkn_blank_wp4"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Whitepaper"
+            app:layout_constraintEnd_toEndOf="@+id/btn_tkn_blank_wp3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/img_tkn_blank4"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tkn_blank4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

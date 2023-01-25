@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="distribution">Distribution</string>
+    <string name="wallet_address">Wallet Address</string>
+    <string name="social">Social</string>
+    <string name="wallet_address1">Wallet Address</string>
+    <string name="drop_remaining">Drop remaining</string>
+    <string name="token_balance">Token Balance</string>
+    <string name="total_distributed">Total distributed</string>
+    <string name="xrmine">XRmine</string>
+    <string name="website">Website</string>
+    <string name="back">back</string>
+    <string name="todo6">TODO6</string>
+    <string name="todo4">TODO4</string>
+</resources>
