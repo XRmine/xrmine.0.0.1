@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        btn_signin = findViewById(R.id.btn_signin);
-        btn_website = findViewById(R.id.btn_website);
-
-        btn_signin.setOnClickListener(new View.OnClickListener() {
+        btn_signin = findViewById(R.id.btn_signin); // this will become the sign in button that sends an xumm request to sign in
+        btn_website = findViewById(R.id.btn_website); // a link to our website
+        
+        // send sign in payload, request xrp balance/connected r address for textview values
+        // check users trustlines and search token DB if Y display token balance / mine button
+        // if N show whitepaper link btn with set TL btn on a timer to display after whitepaper button clicked
+        
+        btn_signin.setOnClickListener(new View.OnClickListener() { 
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TrustlineActivity.class));
